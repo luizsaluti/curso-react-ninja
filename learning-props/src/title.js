@@ -6,12 +6,18 @@ const Title = React.createClass({
     getDefaultProps: function(){
         return {
             nome:"Desconhecido",
-            sobreNome: "sem Sobrenome"
+            sobreNome: "sem Sobrenome",
+            informacoesPessoais:{
+                nascimento: "01/01/1970"
+            }
         }
     },
     render:function(){
         return (
-            <h1>Ola {this.props.nome} {this.props.sobreNome}!</h1>
+            <div>
+                <h1>Ola {this.props.nome} {this.props.sobreNome}!</h1>
+                <h3>Nascido a {this.props.informacoesPessoais.nascimento}</h3>
+            </div>
         )
     }
 })

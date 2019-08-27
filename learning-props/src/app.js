@@ -8,7 +8,7 @@ const App = React.createClass({
         return (
             <div data-id="1">
             <Title nome="Luiz Henrique" sobreNome="Saluti"/>
-                <Title />
+                <Title informacoesPessoais={{nascimento:'06/05/1986'}}/>
             </div>
         )
     }
