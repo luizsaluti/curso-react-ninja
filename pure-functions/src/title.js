@@ -1,11 +1,10 @@
 'use strict'
 
 import React from 'react'
-
-const Title = ({nome, sobreNome}) =>  (
-    <h1>Olá {`${nome} ${sobreNome}`}</h1> 
-)//usando arrow functions. Omitindo chaves e a palavra-chave return
- //na string está sendo aplicado o conceito de "Template String"
+                           //essa seta é um retorno
+const Title = ({nome, sobreNome}) =>  <h1>Olá {`${nome} ${sobreNome}`}</h1> 
+//usando arrow functions. Omitindo chaves e a palavra-chave return
+ //na string está sendo aplicado o conceito de "Template String" (crases)
 
 Title.defaultProps = {
     nome: 'Desconhecido',
