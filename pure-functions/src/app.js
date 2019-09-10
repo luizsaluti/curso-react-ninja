@@ -10,7 +10,11 @@ class App extends Component{
             <div className="conteiner">
                 <Title nome="Luiz Henrique" sobreNome="Saluti"/>
                 <Title informacoesPessoais={{nascimento:'06/05/1986'}}/>
-                <Square color='blue'/>
+                <Square color='cyan'/>
+                {/* exemplo utilizando a função map */}
+                {['red','green','blue'].map((square) => (
+                    <Square key={square} color={square}/>
+                ))}
             </div>
         )
     }
